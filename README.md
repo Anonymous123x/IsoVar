@@ -14,12 +14,14 @@ three variants of VFL based on Ochiai, Tarantula and Barinel (we select such thr
 
 Each VFL based on Ochiai, Tarantula and Barinel as well as IsoVar for each bug can be found at RQ1 folder. For example.
 
-[Chart_VFL_tarantula](RQ1/Chart_VFL_tarantula.txt) in RQ1/ is the result of tarantula for all the bugs in the Chart, below is the first line of the file
->Chart/Chart_1	[16]	0.058823529411764705	0.058823529411764705
+- [Chart_VFL_tarantula.txt](RQ1/Chart_VFL_tarantula.txt) in RQ1/ is the result of tarantula for all the bugs in the Chart
+- [Chart_phase#1.txt](RQ1/Chart_phase#1.txt) in RQ1/ is the results of statistical analysis for Chart by IsoVar, 
+- [Chart_phase#2.txt](RQ1/Chart_phase#2.txt) in RQ1/ is the results combining the two analysis by IsoVar, below is the first line of the file.
+>Chart/Chart_1	[19]	0.05	0.05
 
 The first column represents the bugid, the second column indicates the ranking of each oracle, the remaining two columns represent AP and RR respectively.
 There are 3 lines at the bottom of the file, indicating the MAP, MRR and TOP-n of the project.
-In addition, [Chart_phase#1.txt](RQ1/Chart_phase#1.txt) is the results of statistical analysis for Chart by IsoVar, [Chart_phase#2](RQ1/Chart_phase#2.txt) is the results combining the two analysis by IsoVar.
+In addition, 
 *******
 ## RQ2 : Segmenting IsoVar’s Contributions
 In this RQ, we investigate the contributions of the statistical analysis and mutation analysis, as well as the impact of those parameters involved in the design of IsoVar (i.e. \alpha, \beta and \gamma in Equation 4,5,6).
