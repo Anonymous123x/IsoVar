@@ -37,7 +37,7 @@ You can get the MAP and MRR when taking different parameters in the RQ2 folder. 
 
 - [Chart_0.1.txt](RQ2/phase#1_alpha/Chart_0.1.txt) in RQ2/phase#1_alpha/ means we take 0.1 as _&alpha;_ and observe performance under this setting.
 - [Chart_0.1.txt](RQ2/phase#2_beta/Chart_0.1.txt) in RQ2/phase#2_beta/ means we take 0.1 as _&beta;_ and fix the value of _&alpha;_ and _&gamma;_ to 0.5 to observe the impacts of different _&beta;_.
-- [Chart_0.1.txt](RQ2/phase#3_gamma/Chart_0.1.txt) in RQ2/phase#2_gamma/ means we take 0.1 as _&beta;_ and fix the value of alpha value yo 0.5, and the value of beta to 1 to observe the impacts of different _&gamma;_.
+- [Chart_0.1.txt](RQ2/phase#3_gamma/Chart_0.1.txt) in RQ2/phase#2_gamma/ means we take 0.1 as _&beta;_ and fix the value of alpha value to 0.5, fix the value of beta to 1, then observe the impacts of different _&gamma;_.
 ***
 ## RQ3 : RQ3: Usefulness of IsoVar
 ### Enhancing FL
@@ -79,7 +79,7 @@ All detail data can be found in IsoVar/phase#1 and IsoVar/phase#2 folder. For ex
 
 The format of the data is className \t methodName t variableName \t sourceLine \t suspicious (\t oracle)
 
-We also announced the oracle variables we selected. The selection is based on the variables that exist in the line where the fix patch is located. It is worth mentioning that the fix patch often adds some lines to the variable that cannot be found in the corresponding bugg version. We are matching The oracle variable is fuzzy matching based on the index value of the variable in the bytecode or the variable name information.
+We also announced the oracle variables we selected. The selection is based on the variables that exist in the line where the fix patch is located. It is worth mentioning that the fix patch often adds some lines to the variable that cannot be found in the corresponding buggy version. We are matching The oracle variable is fuzzy matching based on the index value of the variable in the bytecode or the variable name information.
 
 All oracle variable can be found at IsoVar/Oracle folder. For example.
 
